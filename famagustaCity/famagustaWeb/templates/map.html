@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Famagusta Muncipality</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css'%}" />
+    
+    <link rel="stylesheet" href="{%static 'css/maps.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/places.css'%}" />
+    
+     <style>
+      .titlem {
+        background-color:#ffad4293;
+        width: 1200px;
+        border-radius: 50px ;
+        border-color:#ffac42 ;
+        padding: 50px;
+        margin: 20px;
+        position: relative;
+      }
+      </style>
+   
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcwwyIGa9LV9oACKWvTUCAi3IhgxISewg&callback=initMap&libraries=&v=weekly" defer></script>
+  </head>
+  {% block content %}
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light"
+      style=background-color:#f57c00;>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png"  height="60"></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+               Muncipality
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{% url 'mayor' %}">Mayor of Famagusta</a></li>
+                <li><a class="dropdown-item" href="{% url 'history' %}">Muncipality History</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'council' %}">Muncipal Council and admin staff</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="{% url 'maps' %}">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'news' %}">News&Annoucments</a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+            </li>
+            <!-- Navbar dropdown -->
+           
+        
+          </ul>
+          <!-- Left links -->
+    
+          <!-- Search form -->
+          <div class="d-flex input-group w-auto" style="background-color: white;">
+            <input type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1" placeholder="Search"></label>
+          </div>
+          <button type="button" class="btn btn-primary" style="background-color: #ffac42; border-color: #ba4c00;">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    </header>
+
+
+
+<!--HEADER-->
+<center>
+  <div class="titlem"
+>
+  <div class="head">
+<h1 >FAMAGUSTA CITY EXPLORER</h1>
+<h5>Lets Explore various places in famagusta</h5>
+</div>
+  </div>
+</center>
+<!--HEADER-->
+
+
+
+
+
+<!--CARDS-->
+<div class="all1">
+<div class="head">
+<div class="wrapper1">  <h1>Explore Places</h1>
+</div>
+  <div class="cols1">
+			<div class="col1" ontouchstart="this.classList.toggle('hover');">
+				<div class="container1">
+					<div class="front1" style="background-image: url('https://www.riversideholidayvillage.com/wp-content/uploads/2016/06/famagusta.jpg')">
+						<div class="inner1">
+							<p><i class="fas fa-monument"></i></p>
+              <span>CULTURAL SITES & PLACES OF INTEREST</span>
+						</div>
+					</div>
+					<div class="back1">
+						<div class="inner1">
+             
+
+          <button type="button" class="btn btn-primary"  data-mdb-toggle="modal" data-mdb-target="#exampleModal"   style="background-color: #ba4c00;">
+          SEE LOCATIONS
+        </button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col1" ontouchstart="this.classList.toggle('hover');">
+				<div class="container1">
+					<div class="front1" style=" background-image: url('https://cdn2.civitatis.com/chipre/larnaca/galeria/panoramica-kerynia.jpg')">
+						<div class="inner1">
+							<p><i class="fas fa-map-marker-alt"></i></p>
+              <span> THINGS TO DO</span>
+						</div>
+					</div>
+					<div class="back1">
+						<div class="inner1">
+            
+              <button type="button"   style="background-color: #ba4c00;" class="btn btn-primary"  data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+                SEE LOCATIONS
+              </button>
+      
+
+              
+            </div>
+					</div>
+				</div>
+			</div>
+			<div class="col1" ontouchstart="this.classList.toggle('hover');">
+				<div class="container1">
+					<div class="front1" style="background-image: url('https://kensingtoncyprus.com/wp-content/uploads/2019/07/famagusta2-845x684.jpg')">
+						<div class="inner1">
+							<p><i class="fas fa-store"></i></p>
+              <span>SOME RETAIL THERAPY! FIND PLACES TO SHOP</span>
+						</div>
+					</div>
+					<div class="back1">
+						<div class="inner1">
+              
+              <button type="button"   style="background-color: #ba4c00;" class="btn btn-primary"  data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+                SEE LOCATIONS
+              </button>
+            </div>
+					</div>
+				</div>
+			</div>
+			<div class="col1" ontouchstart="this.classList.toggle('hover');">
+				<div class="container1">
+					<div class="front1" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/06/aa/dd/33/ezic-famagusta.jpg')">
+						<div class="inner1">
+							<p><i class="fas fa-utensils"></i></p>
+              <span> WHERE TO EAT</span>
+						</div>
+					</div>
+					<div class="back1">
+						<div class="inner1">
+              
+            
+              <button type="button"   style="background-color: #ba4c00;" class="btn btn-primary"  data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+                SEE LOCATIONS
+              </button>
+              
+            </div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+ </div>
+ </div>
+
+<!--CARDS-->
+
+<!--MAP-->
+
+<div class="containerMap">
+  <div class="head">
+    <h1 style="padding-left: 30%;">MAP OF FAMAGUSTA</h1>
+    </div>
+    <div id="map" class="container"> </div>
+</div>
+
+
+<!--MAP-->
+
+<!--MODALS-->
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CULTURAL SITES & PLACES OF INTEREST</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+          style="background-color: #ba4c00;"
+        ></button>
+      </div>
+      <div class="modal-body">
+        
+        <a><p id="Martinengo Bastion"><i class="fas fa-map-pin" ></i> Martinengo Bastion</p></a>
+              <a><p id=" Armenian Church"><i class="fas fa-map-pin"></i> Armenian Church</p></a>
+              <a><p id="St. Nicholas' Cathedral "><i class="fas fa-map-pin"></i> St. Nicholas' Cathedral (Lala Mustafa Mosque)</p></a>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal"   style="background-color: #ba4c00;">
+          Close
+        </button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal1"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">THINGS TO DO</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+          style="background-color: #ba4c00;"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <a><p><i class="fas fa-map-pin"></i> Archaeology Tours</p></a>
+        <a><p><i class="fas fa-map-pin"></i> Visit Golden beaches</p></a>
+        <a><p><i class="fas fa-map-pin"></i> Day Tours</p></a>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal"   style="background-color: #ba4c00;">
+          Close
+        </button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal2"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">SOME RETAIL THERAPY! FIND PLACES TO SHOP</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+          style="background-color: #ba4c00;"
+        ></button>
+      </div>
+      <div class="modal-body">
+       
+<a><p><i class="fas fa-map-pin"></i> LC Waikiki</p></a>
+<a><p><i class="fas fa-map-pin"></i> Mavi Jeans</p></a>
+<a><p><i class="fas fa-map-pin"></i> Terranova</p></a>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal"   style="background-color: #ba4c00;">
+          Close
+        </button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal3"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WHERE TO EAT</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+          style="background-color: #ba4c00;"
+        ></button>
+      </div>
+      <div class="modal-body">
+       
+        <a><p><i class="fas fa-map-pin"></i> Ezic Magusa</p></a>
+        <a><p><i class="fas fa-map-pin"></i> Ocean House Seafood</p></a>
+        <a><p><i class="fas fa-map-pin"></i> Beckett Restaurant</p></a>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal" style="background-color: #ba4c00;">
+          Close
+        </button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--MODALS-->
+
+
+
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #ffac42;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/GazimagusaBelediyesi" role="button"
+      target="_blank"><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/gmagusa" role="button"
+      target="_blank"><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/search?q=Gazima%C4%9Fusa+Belediyesi+&sxsrf=ALeKk03kqAGGuu8mnx6c8hpdvVQpRktCzw%3A1621452938882&ei=imilYLmqNdD6sAfU46fQCw" role="button"
+      target="_blank"><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/gazimagusabelediyesi/" role="button"
+      target="_blank" ><i class="fab fa-instagram"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+      A city on the east coast of Cyprus. It is located east of Nicosia and possesses the deepest harbour of the island.
+        During the medieval period (especially under the maritime republics of Genoa and Venice), Famagusta was the island's
+        most important port city and a gateway to trade with the ports of the Levant,from where the Silk Road merchants carried
+         their goods to Western Europe.The old walled city and parts of the modern city presently fall within the de facto 
+        Turkish Republic of Northern Cyprus in Gazimağusa District, of which it is the capital.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+       
+
+       <!--Grid column-->
+       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.gazimagusabelediyesi.org/" class="text-white" target="_blank">Official Muncipality Page</a>
+          </li>
+          <li>
+            <a href="https://permissions.gov.ct.tr/login" class="text-white" target="_blank"> Student Permission Portal</a>
+          </li>
+         
+        </ul>
+      </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+      <!-- MDB -->
+      <script type="text/javascript" src="{%static 'js/mdb.min.js'%}"></script>
+      <!--Bootstrap-->
+      <script type="text/javascript" src="{%static 'js/bootstrap.js'}"></script>
+      <!-- Custom scripts -->
+      <script type="text/javascript" src="{% static 'js/google.js' %}"></script>
+</body>
+{% endblock %}
+</html>

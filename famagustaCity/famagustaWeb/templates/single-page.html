@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <title>Famagusta News</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" type="image/x-icon" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'css/slick.css'%}" rel="stylesheet">
+        <link href="{% static 'css/slick-theme.css'%}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tb-contact">
+                            <p><i class="fas fa-envelope"></i>info@gazimagusabelediyesi.org</p>
+                            <p><i class="fas fa-phone-alt"></i>+90 (392) 630 05 00</p>
+                            <p><i class="fas fa-phone-alt"></i>444 4 GMB</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Start -->
+        
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-logo">
+                            <a href="{% url 'home' %}">
+                                <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+
+       <!-- Nav Bar Start -->
+       <div class="nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="{% url 'news' %}" class="nav-item nav-link active">Home</a>
+                       
+                        <a href="{% url 'reading' %}" class="nav-item nav-link">COVID-19 Updates</a>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">OTHER NEWS</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Annoucments</a>
+                                <a href="#" class="dropdown-item">Arts and Culture</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <div class="social ml-auto">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Covid-19</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- Single News Start-->
+        <div class="single-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="sn-container">
+                            <div class="sn-img">
+                                <img src="https://www.balcanicaucaso.org/var/obc/storage/images/aree/bulgaria/bulgaria-in-attesa-dello-stress-test-del-coronavirus-200091/1953797-6-ita-IT/Bulgaria-waiting-for-the-coronavirus-stress-test.jpg" height="200" width="200"/>
+                            </div>
+                            <div class="sn-content">
+                                <h1 class="sn-title">COVID-19 DAILY UPDATE</h1>
+                                <p>
+                                    <img src="https://saglik.gov.ct.tr/portals/9/19%20MAYIS.jpg" height="500" width="500" />
+                                </p>
+                                <p>
+                                    <img src="https://saglik.gov.ct.tr/portals/9/YERELVAKA%2019%20MAYIS.jpg" height="500" width="500" />
+                                </p>
+                               
+                                <br><br>
+                                <h2>Vaccaction Information System</h2>
+                                <hr/>
+                                <p>
+                                    <a href="https://asibilgisistemi.com/" target="_blank"><img src="https://saglik.gov.ct.tr/portals/9/3.jpg" height="200" width="600" /></a>
+                                </p>
+                                <p>
+                                    Click on above image to visit the vaccination information system and make and online appointmen to get vaccinated
+                                </p>
+
+                                <h2>PCR TEST SONCLARI ONLINE BILDIRIM</h2>
+                                <hr/>
+                                <p>
+                                    <a href="https://covid-19.gov.ct.tr/" target="_blank"><img src="https://saglik.gov.ct.tr/portals/9/2.jpg" height="200" width="600" /></a>
+                                </p>
+                                <p>
+                                    Click on above image to visit the Pandemic Information System
+                                </p>
+
+
+
+                                <h2>TRNC TRAVEL RULES</h2>
+                                <hr/>
+                                <p>
+                                    <a href="https://saglik.gov.ct.tr/TRAVEL-RULES" target="_blank"><img src="https://saglik.gov.ct.tr/portals/9/5.jpg" height="200" width="600" /></a>
+                                </p>
+                               
+                                <p>
+                                    Click on above image to learn about the current travel restrictions in the TRNC
+                                </p>
+
+                                <h2>Covid-19 Chronic Disease Evaluation Form</h2>
+                                <hr/>
+                                <p>
+                                    <a href="https://saglik.gov.ct.tr/Portals/9/covid%20-19%20risk%20degerlendirme%20formu.pdf" target="_blank"><img src="https://saglik.gov.ct.tr/portals/9/6.jpg" height="200" width="600" /></a>
+                             </p>
+                              <P>
+                                    57/1979 Within the framework of Article 16 of the Law on the Establishment Principles of Ministries, a temporary Covid -19 Chronic Disease Evaluation Commission has been established.
+                                    <BR>
+                                Personnel working in all Public Institutions and Organizations; Due to the Covid-19 outbreak, if he thinks that his current health situation poses a high risk for working life, he will be able to apply to the Covid-19 Chronic Disease Evaluation Commission.
+                                        <br>
+                                Applications will be made as follows:
+                                <br>
+
+                                1. The staff will inform their physician about their situation. If the doctor deems necessary as a result of his evaluation, he will fill in the relevant section of the attached COVID-19 Chronic Disease Assessment Form. The staff will apply to the Institution to which they are affiliated with the following documents.
+                                        <br>
+                                A doctor report documenting the disease, the
+                                medications he uses and a prescription showing how long he will use,
+                                Tests documenting his disease,
+                                </P>
+                            </div>
+                        </div>
+                        <div class="sn-related">
+                            <h2>Related News</h2>
+                            <div class="row sn-slider">
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="https://www.lgcnews.com/wp-content/uploads/2021/05/North-Cyprus-News-Young-People-Masks.jpg" />
+                                        <div class="sn-title">
+                                            <a href="https://www.lgcnews.com/young-people-most-likely-to-spread-covid-infection/">Young People Most Likely To Spread Covid Infection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="https://www.lgcnews.com/wp-content/uploads/2017/01/North-Cyprus-News-Pharmacy-1.jpg" />
+                                        <div class="sn-title">
+                                            <a href="https://www.lgcnews.com/pharmacy-summer-opening-hours-begin-today/">Pharmacy Summer Opening Hours Begin Today</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        <img src="https://www.lgcnews.com/wp-content/uploads/2020/03/North-Cyprus-News-Metehan-Border-Crossing-300x177-1.jpg" />
+                                        <div class="sn-title">
+                                            <a href="https://www.lgcnews.com/discussions-about-reopening-border-to-resume/">Discussions About Reopening Border To Resume</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+                                <h2 class="sw-title">Covid-19 News</h2>
+                                <div class="news-list">
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="data:image/jpeg;base64,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" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="https://www.wsj.com/articles/indias-covid-19-daily-death-toll-hits-worlds-high-11621445978">India’s Covid-19 Daily Death Toll Hits World’s High</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="data:image/jpeg;base64,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" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="https://www.gov.uk/government/news/world-first-covid-19-vaccine-booster-study-launches-in-uk">World's first clinical trial on coronavirus booster vaccines launched in UK</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/ma_0528_W_NF_vaccineInequality_unmaskedman.jpg?itok=8e6Ajhs1" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="https://www.sciencemag.org/news/2021/05/why-world-s-largest-covid-19-vaccine-campaign-faltering">Why is the world’s largest COVID-19 vaccine campaign faltering?</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/9584d0e6-d4c2-4e6b-a1d6-852cf31c12a0.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-vaccine-updates-05-18-21/h_63bcf111cdb343fa5e81fd47b8ee2b36">Taiwan to close all schools amid rising Covid-19 cases</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/c6a7d2a6-052b-431e-bb6b-c22ffd3810ee.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-vaccine-updates-05-18-21/h_63bcf111cdb343fa5e81fd47b8ee2b36">Taiwan's Premier urges people to save medical resources for critical Covid-19 patients</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="sidebar-widget">
+                                <div class="tab-news">
+                                    <ul class="nav nav-pills nav-justified">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#featured">Featured</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#popular">Popular</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#latest">Latest</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div id="featured" class="container tab-pane active">
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://i.sozcu.com.tr/wp-content/uploads/2021/05/16/iecrop/kuzey-kibris-reuters_16_9_1613589360_16_9_1614511478_16_9_1614793725_16_9_1621199995-670x371.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.sozcu.com.tr/2021/dunya/kktcde-son-24-saatte-31i-yerel-38-yeni-vaka-6434903/">KKTC’de son 24 saatte 31’i yerel 38 yeni vaka</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://i.sozcu.com.tr/wp-content/uploads/2021/05/15/iecrop/hs17ercan1_16_9_1621051066-670x371.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.sozcu.com.tr/2021/gundem/yavru-vatanda-ercan-krizi-6428375/"><p id="desc">Yavru Vatan’da Ercan krizi</p></a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://i.sozcu.com.tr/wp-content/uploads/2021/05/15/iecrop/14ercan-2_16_9_1621122649-670x371.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.sozcu.com.tr/2021/gundem/ercan-havalimaninin-adi-degismeyecek-6433663/">Ercan Havalimanı’nın adı değişmeyecek</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="popular" class="container tab-pane fade">
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://i12.haber7.net//haber/haber7/photos/2021/19/kktc_basbakani_ersan_saner_erken_secim_tarihinin_nisan_2022_olmasinda_israrliyiz_1621178140_8633.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.haber7.com/dunya/haber/3100665-kktc-basbakani-saner-erken-secim-tarihinin-nisan-2022-olmasinda-israrliyiz">KKTC Başbakanı Saner: Erken seçim tarihinin Nisan 2022 olmasında ısrarlıyız</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://i13.haber7.net/haber/haber7/bigmanset/2021/20/cihat_yaycidan_cok_konusulacak_filistin_onerisi_turkiyenin_eli_guclenir_1621224600_9768.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.haber7.com/guncel/haber/3100763-cihat-yaycidan-cok-konusulacak-filistin-onerisi-turkiyenin-eli-guclenir">Cihat Yaycı'dan çok konuşulacak Filistin önerisi: Türkiye'nin eli güçlenir</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://cdn.yenicaggazetesi.com.tr/news/2021/05/160520211420112285896.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.yenicaggazetesi.com.tr/kktc-cumhurbaskani-ersin-tatardan-besiktasa-tebrik-452152h.htm">KKTC Cumhurbaşkanı Tatar'dan Beşiktaş'a tebrik</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="latest" class="container tab-pane fade">
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="http://www.patronlardunyasi.com/haber_resim/KKTC%2Dye%2Dgiris%2Dicin%2D2%2Dbin%2D255%2DTL%2Ducret%C2%A0odenecek%2D243918%2D20201205151309%2Ejpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.patronlardunyasi.com/haber/Tepkiler-uzerine-Ercan-Havalimani-nin-adi-degismeyecek/250413">Tepkiler üzerine Ercan Havalimanı’nın adı değişmeyecek</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://iasbh.tmgrup.com.tr/762493/640/314/0/0/752/640?u=https://isbh.tmgrup.com.tr/sbh/2021/05/17/kendimizden-baska-kimseye-guvenmeyiz-1621205548455.jpg&bg=1" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.sabah.com.tr/yazarlar/sebnem-bursali/2021/05/17/kendimizden-baska-kimseye-guvenmeyiz">Kendimizden başka kimseye güvenmeyiz</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="https://iasbh.tmgrup.com.tr/20e19c/640/314/0/0/752/640?u=https://isbh.tmgrup.com.tr/sbh/2021/05/17/son-dakika-baskan-erdogandan-sabaha-cok-ozel-filistin-ve-kktc-aciklamalari-dis-politikada-yeni-sayfa-mi-aciliyor-1621224569975.jpg&bg=1" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="https://www.sabah.com.tr/gundem/2021/05/17/son-dakika-baskan-erdogandan-sabaha-cok-ozel-filistin-ve-kktc-aciklamalari-dis-politikada-yeni-sayfa-mi-aciliyor">Son dakika | Başkan Erdoğan'dan SABAH'a çok özel Filistin ve KKTC açıklamaları: Dış politikada yeni sayfa mı açılıyor?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="sidebar-widget">
+                               
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h2 class="sw-title">News Category</h2>
+                                <div class="category">
+                                    <ul>
+                                        <li><a href="">National</a><span>(98)</span></li>
+                                        <li><a href="">International</a><span>(87)</span></li>
+                                        <li><a href="">Economics</a><span>(76)</span></li>
+                                        <li><a href="">Politics</a><span>(65)</span></li>
+                                        <li><a href="">Lifestyle</a><span>(54)</span></li>
+                                        <li><a href="">Technology</a><span>(43)</span></li>
+                                        <li><a href="">Trades</a><span>(32)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget">
+                             
+                            </div>
+                            
+                            <div class="sidebar-widget">
+                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single News End-->        
+        
+       <!-- Footer Start -->
+       <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Get in Touch</h3>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"> İlker Karter Cd, Gazimağusa 99450</p></i>
+                            <p><i class="fa fa-envelope"> info@gazimagusabelediyesi.org</p></i>
+                            <p><i class="fa fa-phone"> +90 392 630 05 00</p></i>
+                            <div class="social">
+                                <a href="https://twitter.com/gmagusa"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/GazimagusaBelediyesi"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/gazimagusabelediyesi/"><i class="fab fa-instagram"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Useful Links</h3>
+                        <ul>
+                            <li><a href="https://saglik.gov.ct.tr/COVID-19">Saglik(Ministry of health)</a></li>
+                            <li><a href="https://www.gazimagusabelediyesi.org
+                                ">Municipality Official Website</a></li>
+                            <li><a href="https://permissions.gov.ct.tr/login">Student Residence Permit</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Other News</h3>
+                        <ul>
+                            <li><a href="https://www.lgcnews.com ">Lgc News</a></li>
+                               
+                            <li><a href="https://www.olomoinfo.com/">Olomoinfo</a></li>
+                            <li><a href="www.yenicaggazetesi.com">yenicag gazetesi</a></li>
+                            <li><a href="www.haber7.com">Haber 7</a></li>
+                            <li><a href="https://www.cyprustodayonline.com">Cyprus Today</a></li>
+                                
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Newsletter</h3>
+                        <div class="newsletter">
+                            <p>
+                                Sign up for our newsletter and get the latest news first!
+                            </p>
+                            <form>
+                                <input class="form-control" type="email" placeholder="Your email here">
+                                <button class="btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    
+    <!-- Footer Menu Start -->
+    <div class="footer-menu">
+        <div class="container">
+            <div class="f-menu">
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies</a>
+                <a href="">Accessibility help</a>
+                <a href="">Advertise with us</a>
+                <a href="">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Menu End -->
+
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="">FamagustaNews</a>. All Rights Reserved</p>
+                </div>
+
+                <div class="col-md-6 template-by">
+                    <p>Designed By <a href="#">CollinDevs</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

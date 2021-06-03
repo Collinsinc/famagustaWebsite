@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Famagusta Muncipality</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css'%}" />
+    
+   <style>
+     .titlem {
+        background-color:#ffad4293;
+        width: 1200px;
+        border-radius: 50px ;
+        border-color:#ffac42 ;
+        padding: 50px;
+        margin: 20px;
+        position: relative;
+      }
+        </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light"
+      style=background-color:#f57c00;>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png"  height="60"></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+               Muncipality
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{% url 'mayor' %}">Mayor of Famagusta</a></li>
+                <li><a class="dropdown-item" href="{% url 'history' %}">Muncipality History</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'council' %}">Muncipal Council and admin staff</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="{% url 'maps' %}">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'news' %}">News&Annoucments</a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+            </li>
+            <!-- Navbar dropdown -->
+           
+        
+          </ul>
+          <!-- Left links -->
+    
+          <!-- Search form -->
+          <div class="d-flex input-group w-auto" style="background-color: white;">
+            <input type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1" placeholder="Search"></label>
+          </div>
+          <button type="button" class="btn btn-primary" style="background-color: #ffac42; border-color: #ba4c00;">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  <center>
+<div class="titlem"
+><h1>THE HISTORY OF FAMAGUSTA MUNCIPALITY</h1>
+<h2></h2>
+</div>
+
+<p style="text-indent: 200px;">
+Famagusta Turkish Municipality was founded in 1958 for the first time. The first Town Hall was the building in Suriçi, which used to be the police station and nowadays is used as the Department of Antiquities. With the 1960 Constitution, it gained its legal identity with the provisions stipulating that there should be two separate municipalities, Turkish and Greek, in the cities.
+Until 1974, it served Turkish neighborhoods in Famagusta and a population of approximately 8 - 10 thousand. In the following years, Tuzla Village joined the Municipality, which was reorganized to serve all Famagusta after 1974. The municipality, which started working with a very small number of employees, reached 350 employees in the early 1990s.
+Famagusta Municipality, which has an area of ​​approximately 93 square kilometers with the Mutluyaka village, which has reached a population of 40 thousand with more than 16 thousand university students and staff in the city for most of the year in addition to 28 thousand citizens living in the city, is the second largest in our country. it is an urban area.
+</p>
+
+<strong><h3>The Mayors who have been working in Famagusta Municipality since 1958 are as follows.</h3></strong>
+<img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/belediye_baskanlari.jpg"/>
+
+
+
+</center>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://media.istockphoto.com/photos/view-of-famagusta-town-looking-towards-the-sea-cyprus-picture-id700369516?k=6&m=700369516&s=612x612&w=0&h=GlPwgJTFi62UM-jRPUG-vobHKwOFJttdWbB_YUpfDTQ=" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Famagusta historical sites</h1>
+        <p class="lead">Click the button below to see the different famagusta historical sites that make up our beautfiul city.
+            from the majestic walled city to the salamis ruins famagusta is a hub of history and filled with so much knowlege that 
+            celebrates our history and where we come from.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore</button>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+<footer class="text-center text-white" style="background-color: #ffac42;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/GazimagusaBelediyesi" role="button"
+        target="_blank"><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/gmagusa" role="button"
+        target="_blank"><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/search?q=Gazima%C4%9Fusa+Belediyesi+&sxsrf=ALeKk03kqAGGuu8mnx6c8hpdvVQpRktCzw%3A1621452938882&ei=imilYLmqNdD6sAfU46fQCw" role="button"
+        target="_blank"><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/gazimagusabelediyesi/" role="button"
+        target="_blank" ><i class="fab fa-instagram"></i
+        ></a>
+  
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+        A city on the east coast of Cyprus. It is located east of Nicosia and possesses the deepest harbour of the island.
+          During the medieval period (especially under the maritime republics of Genoa and Venice), Famagusta was the island's
+          most important port city and a gateway to trade with the ports of the Levant,from where the Silk Road merchants carried
+           their goods to Western Europe.The old walled city and parts of the modern city presently fall within the de facto 
+          Turkish Republic of Northern Cyprus in Gazimağusa District, of which it is the capital.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+         
+  
+         
+         <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.gazimagusabelediyesi.org/" class="text-white" target="_blank">Official Muncipality Page</a>
+            </li>
+            <li>
+              <a href="https://permissions.gov.ct.tr/login" class="text-white" target="_blank"> Student Permission Portal</a>
+            </li>
+           
+          </ul>
+        </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+      <!-- MDB -->
+      <script type="text/javascript" src="{%static 'js/mdb.min.js'%}"></script>
+      <!--Bootstrap-->
+      <script type="text/javascript" src="{%static 'js/bootstrap.js'}"></script>
+      <!-- Custom scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+      <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+  </html>

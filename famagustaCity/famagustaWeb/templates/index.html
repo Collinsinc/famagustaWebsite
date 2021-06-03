@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Famagusta Muncipality</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" type="image/x-icon" />
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css'%}" />
+    
+    <link rel="stylesheet" href="{%static 'css/weathercard.css'%}" />
+   
+    <!--<link rel="stylesheet" href="{%static 'css/welcometext.css'%}" />-->
+  </head>
+  
+  <body>
+
+   
+  
+
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light"
+    style=background-color:#f57c00;>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png"  height="60"></a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+             Muncipality
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'mayor' %}">Mayor of Famagusta</a></li>
+              <li><a class="dropdown-item" href="{% url 'history' %}">Muncipality History</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="{% url 'council' %}">Muncipal Council and admin staff</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="{% url 'maps' %}">Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'news' %}">News&Annoucments</a>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+          </li>
+          <!-- Navbar dropdown -->
+         
+      
+        </ul>
+        <!-- Left links -->
+  
+        <!-- Search form -->
+        
+          <div class="d-flex input-group w-auto" style="background-color: white;">
+            <input type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1" placeholder="Search"></label>
+          </div>
+          <button type="button" class="btn btn-primary" style="background-color: #ffac42; border-color: #ba4c00;">
+            <i class="fas fa-search"></i>
+          </button>
+ 
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+   <!-- Background image -->
+   <div
+   class="p-5 text-center bg-image"
+   style="
+     background-image: url('https://blog.limakhotels.com/wp-content/uploads/2020/09/Famagusta-Cyprus_-Compact-City-Guide.png');
+     height: 700px;
+   "
+ >
+   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+     <div class="d-flex justify-content-center align-items-center h-100">
+       <div class="text-white">
+       <div class="body1">
+       
+         <h1 class="mb-3">HOŞGELDINIZ</h1>
+         
+         <h4 class="mb-3">“Dinlenmemek üzere yola çıkanlar asla yorulmazlar.”
+          ― Mustafa Kemal Atatürk
+           </h4>
+         <a class="btn btn-outline-light btn-lg" href="{% url 'maps'%}" role="button"
+           >EXPLORE CITY</a
+         >
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Background image -->
+</header>
+<br><br>
+<!--cards-->
+
+
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="https://media.istockphoto.com/photos/view-of-famagusta-town-looking-towards-the-sea-cyprus-picture-id700369516?k=6&m=700369516&s=612x612&w=0&h=GlPwgJTFi62UM-jRPUG-vobHKwOFJttdWbB_YUpfDTQ=" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Welcome to Famagusta Municipality Explorers Website</h1>
+      <p class="lead">Interactive maps and information about different attractions,
+      viewpoints and places of interests like recreational centers, restaurants and buildings within the city. Also inforamtion on municipality and its services</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="https://www.gazimagusabelediyesi.org/" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #ffac42;">Visit Official Page</button></a>
+        <a href="{% url 'news' %}"   target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-1" style="background-color: #ffac42;" >Visit Muncipality News Site</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--cards-->
+
+
+<h1 class="display-5 fw-bold lh-1 mb-3" style="padding-left: 90px;">News & Annoucments</h1>
+<br>
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+          <image width="100%" height="260" xlink:href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/05/MG_7954.jpg"  />
+          
+        </svg>
+          
+        <div class="card-body">
+          <h5 class="card-title"><strong>WORK IS BEING DONE TO DEVELOP GAZİMAĞUSA MUNICIPAL MEZBAHASI</strong></h5>
+          <p class="card-text">Mayor İsmail Arter Held a Meeting with Butchers in Famagusta Famagusta Mayor İsmail Arter held a meeting with the butchers operating in Famagusta and listened to the problems and […]
+            <a href="https://www.gazimagusabelediyesi.org/kat/haberler/">READ MORE...</a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card p-3 text-end">
+        <figure class="mb-0">
+          <blockquote class="blockquote">
+            <p>Ayağını yorganına göre uzat.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-muted">
+            Someone famous in <cite title="Source Title">Unknown</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <image width="100%" height="200" xlink:href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/04/163989398_1608665086010580_2679634843154541977_n.jpg"  />
+        </svg>
+
+        <div class="card-body">
+          <h5 class="card-title"><strong>WORK CONTINUES TO MAKE A FOOTBALL FIELD IN TUZLA</strong></h5>
+          <p class="card-text">Famagusta Mayor İsmail Arter visited Tuzla and saw the work on the football field that was started in the region.<a href="https://www.gazimagusabelediyesi.org/kat/haberler/">READ MORE...</a> </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" >
+      <div class="card bg-primary text-white text-center p-3" >
+        <figure class="mb-0" >
+          <blockquote class="blockquote" >
+            <p>A nation which makes the final sacrifice for life and freedom does not get beaten.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-white">
+            Someone famous in <cite title="Source Title">Mustafa Kemal Atatürk</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--EXCHANGE RATES-->
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card text">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Lira Exchange Rates</strong></h5>
+          <p> <i class="fas fa-dollar-sign" id="dollar"></i> DOLLAR&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;8.45</p>
+          <p> <i class="fas fa-euro-sign" id="euro"></i> EURO&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10.26</p>
+          <p> <i class="fas fa-pound-sign"id="GBP"></i> GBP&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &ensp;11.5685</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    
+       <!--EXCHANGE RATES-->
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+      
+          <image width="100%" height="260" xlink:href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/05/ihale-dosya.png" clip-path="url(#myCircle)" />
+        </svg>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <image width="100%" height="200" xlink:href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/04/166456410_1613489288861493_119611714375694849_n-1536x1023.jpg"  />
+        </svg>
+
+        <div class="card-body">
+          <h5 class="card-title"><strong>SUPPORT FROM THE MINISTRY OF NATIONAL EDUCATION AND CULTURE TO THE BANDABULIAN LIBRARY OF GAZİMAĞUSA MUNICIPALITY</strong></h5>
+          <p class="card-text">Famagusta Mayor İsmail Arter visited the Ministry of National Education and Culture today as part of the 29 March - 4 April Library Week and received the books to be included in the Bandabuliya Library[..] <a href="https://www.gazimagusabelediyesi.org/kat/haberler/">READ MORE...</a> </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card"> <img class="" src="https://i.imgur.com/a9sHoeY.jpg" alt="Card image cap">
+        <div class="card-img-overlay" style="height:110px;">
+            <h3 class="card-title text-white m-b-0 dl">Famagusta</h3> <small class="card-text text-white font-light" id="date"></small>
+        </div>
+        <div class="card-body weather-small">
+            <div class="row">
+                <div class="col-8 b-r align-self-center">
+                    <div class="d-flex">
+                        <div class="display-6 text-info"><i class="mdi mdi-weather-pouring"></i></div>
+                        <div class="m-l-20">
+                            <h1 class="font-light text-info m-b-0" id="temp"><sup>0</sup></h1> <small id="desc"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <h1 class="font-light m-b-0" id="tempNight"><sup>0</sup></h1> <small>Tonight</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+   
+
+  </div>
+  
+ 
+  
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #ffac42;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/GazimagusaBelediyesi" role="button"
+      target="_blank"><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/gmagusa" role="button"
+      target="_blank"><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/search?q=Gazima%C4%9Fusa+Belediyesi+&sxsrf=ALeKk03kqAGGuu8mnx6c8hpdvVQpRktCzw%3A1621452938882&ei=imilYLmqNdD6sAfU46fQCw" role="button"
+      target="_blank"><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/gazimagusabelediyesi/" role="button"
+      target="_blank" ><i class="fab fa-instagram"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <form  method="POST">
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" name="newsletter" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </form>
+          </div>
+        
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+      A city on the east coast of Cyprus. It is located east of Nicosia and possesses the deepest harbour of the island.
+        During the medieval period (especially under the maritime republics of Genoa and Venice), Famagusta was the island's
+        most important port city and a gateway to trade with the ports of the Levant,from where the Silk Road merchants carried
+         their goods to Western Europe.The old walled city and parts of the modern city presently fall within the de facto 
+        Turkish Republic of Northern Cyprus in Gazimağusa District, of which it is the capital.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+       
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.gazimagusabelediyesi.org/" class="text-white" target="_blank">Official Muncipality Page</a>
+            </li>
+            <li>
+              <a href="https://permissions.gov.ct.tr/login" class="text-white" target="_blank"> Student Permission Portal</a>
+            </li>
+           
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">CollinDevs</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <!-- MDB -->
+    <script type="text/javascript" src="{%static 'js/mdb.min.js'%}"></script>
+    <!--Bootstrap-->
+    <script type="text/javascript" src="{%static 'js/bootstrap.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/weathercard.js'%}"></script>
+   
+
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="{%static 'js/weatherAPI.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+ 
+  </body>
+</html>

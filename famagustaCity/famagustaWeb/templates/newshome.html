@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <title>Famagusta News</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="description">
+        <link rel="icon" href="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" type="image/x-icon" />
+        <!-- Favicon -->
+       
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'css/slick.css'%}" rel="stylesheet">
+        <link href="{% static 'css/slick-theme.css'%}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tb-contact">
+                            <p><i class="fas fa-envelope"></i>info@gazimagusabelediyesi.org</p>
+                            <p><i class="fas fa-phone-alt"></i>+90 (392) 630 05 00</p>
+                            <p><i class="fas fa-phone-alt"></i>444 4 GMB</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Start -->
+        
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-logo">
+                            <a href="{% url 'home' %}">
+                                <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/01/main_logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="#" class="nav-item nav-link active">Home</a>
+                           
+                            <a href="{% url 'reading' %}" class="nav-item nav-link">COVID-19 Updates</a>
+                            
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">OTHER NEWS</a>
+                                <div class="dropdown-menu">
+                                    <a href="{% url 'annoucement' %}" class="dropdown-item">Annoucments</a>
+                                    <a href="#" class="dropdown-item">Arts and Culture</a>
+                                </div>
+                            </div>
+                            <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                        <div class="social ml-auto">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Top News Start-->
+        <div class="top-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 tn-left">
+                        <div class="row tn-slider">
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/05/MG_7954.jpg" />
+                                    <div class="tn-title">
+                                        <a href="">WORK IS MADE TO DEVELOP GAZİMAĞUSA MUNICIPAL MEZBAHASI</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/04/166456410_1613489288861493_119611714375694849_n-1024x682.jpg" />
+                                    <div class="tn-title">
+                                        <a  href="">BOOK SUPPORT FROM THE MINISTRY OF NATIONAL EDUCATION AND CULTURE </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 tn-right">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/05/MG_7971-1024x683.jpg" />
+                                    <div class="tn-title">
+                                        <a href="https://www.gazimagusabelediyesi.org/ikinci-bahar-yasam-kulubu-uyelerinin-anneler-gununu-kutladi-2/" target="_blank">SECOND SPRING CELEBRATED THE MOTHER'S DAY OF LIFE CLUB MEMBERS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/05/MG_7973.jpg" />
+                                    <div class="tn-title">
+                                        <a href="https://www.gazimagusabelediyesi.org/ikinci-bahar-yasam-kulubu-uyelerinin-anneler-gununu-kutladi-2/" target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2019/05/ihale-dosya.png" />
+                                    <div class="tn-title">
+                                        <a href="https://www.gazimagusabelediyesi.org/gazimagusa-belediyesi-ismet-inonu-bulvari-duzenleme-projesi-2-etap-ihale-duyurusu/" target="_blank">Famagusta Municipality İsmet İnönü Boulevard Arrangement Project (2nd Stage) Tender Announcement</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="https://www.gazimagusabelediyesi.org/wp-content/uploads/2021/05/haber-1-1024x578.jpg" />
+                                    <div class="tn-title">
+                                        <a href="https://www.gazimagusabelediyesi.org/gazimagusa-belediyesi-asfalt-dokumune-devam-ediyor-sakarya-mahallesi/" target="_blank">GAZİMAĞUSA MUNICIPALITY CONTINUES ASPHALT DUMPING (SAKARYA DISTRICT)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top News End-->
+
+        
+        
+        <!-- Tab News Start-->
+        <div class="tab-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#featured">Featured News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#popular">Popular News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#latest">Latest News</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="featured" class="container tab-pane active">
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://i.sozcu.com.tr/wp-content/uploads/2021/05/16/iecrop/kuzey-kibris-reuters_16_9_1613589360_16_9_1614511478_16_9_1614793725_16_9_1621199995-670x371.jpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.sozcu.com.tr/2021/dunya/kktcde-son-24-saatte-31i-yerel-38-yeni-vaka-6434903/">KKTC’de son 24 saatte 31’i yerel 38 yeni vaka</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://i.sozcu.com.tr/wp-content/uploads/2021/05/15/iecrop/hs17ercan1_16_9_1621051066-670x371.jpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.sozcu.com.tr/2021/gundem/yavru-vatanda-ercan-krizi-6428375/"><p id="desc">Yavru Vatan’da Ercan krizi</p></a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://i.sozcu.com.tr/wp-content/uploads/2021/05/15/iecrop/14ercan-2_16_9_1621122649-670x371.jpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.sozcu.com.tr/2021/gundem/ercan-havalimaninin-adi-degismeyecek-6433663/">Ercan Havalimanı’nın adı değişmeyecek</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="popular" class="container tab-pane fade">
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://i12.haber7.net//haber/haber7/photos/2021/19/kktc_basbakani_ersan_saner_erken_secim_tarihinin_nisan_2022_olmasinda_israrliyiz_1621178140_8633.jpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.haber7.com/dunya/haber/3100665-kktc-basbakani-saner-erken-secim-tarihinin-nisan-2022-olmasinda-israrliyiz">KKTC Başbakanı Saner: Erken seçim tarihinin Nisan 2022 olmasında ısrarlıyız</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://i13.haber7.net/haber/haber7/bigmanset/2021/20/cihat_yaycidan_cok_konusulacak_filistin_onerisi_turkiyenin_eli_guclenir_1621224600_9768.jpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.haber7.com/guncel/haber/3100763-cihat-yaycidan-cok-konusulacak-filistin-onerisi-turkiyenin-eli-guclenir">Cihat Yaycı'dan çok konuşulacak Filistin önerisi: Türkiye'nin eli güçlenir</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://cdn.yenicaggazetesi.com.tr/news/2021/05/160520211420112285896.jpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.yenicaggazetesi.com.tr/kktc-cumhurbaskani-ersin-tatardan-besiktasa-tebrik-452152h.htm">KKTC Cumhurbaşkanı Tatar'dan Beşiktaş'a tebrik</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="latest" class="container tab-pane fade">
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="http://www.patronlardunyasi.com/haber_resim/KKTC%2Dye%2Dgiris%2Dicin%2D2%2Dbin%2D255%2DTL%2Ducret%C2%A0odenecek%2D243918%2D20201205151309%2Ejpg" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.patronlardunyasi.com/haber/Tepkiler-uzerine-Ercan-Havalimani-nin-adi-degismeyecek/250413">Tepkiler üzerine Ercan Havalimanı’nın adı değişmeyecek</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://iasbh.tmgrup.com.tr/762493/640/314/0/0/752/640?u=https://isbh.tmgrup.com.tr/sbh/2021/05/17/kendimizden-baska-kimseye-guvenmeyiz-1621205548455.jpg&bg=1" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.sabah.com.tr/yazarlar/sebnem-bursali/2021/05/17/kendimizden-baska-kimseye-guvenmeyiz">Kendimizden başka kimseye güvenmeyiz</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="https://iasbh.tmgrup.com.tr/20e19c/640/314/0/0/752/640?u=https://isbh.tmgrup.com.tr/sbh/2021/05/17/son-dakika-baskan-erdogandan-sabaha-cok-ozel-filistin-ve-kktc-aciklamalari-dis-politikada-yeni-sayfa-mi-aciliyor-1621224569975.jpg&bg=1" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="https://www.sabah.com.tr/gundem/2021/05/17/son-dakika-baskan-erdogandan-sabaha-cok-ozel-filistin-ve-kktc-aciklamalari-dis-politikada-yeni-sayfa-mi-aciliyor">Son dakika | Başkan Erdoğan'dan SABAH'a çok özel Filistin ve KKTC açıklamaları: Dış politikada yeni sayfa mı açılıyor?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#m-viewed">Most Viewed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#m-read">Most Read</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#m-recent">Most Recent</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="m-viewed" class="container tab-pane active">
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-5.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-4.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-3.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="m-read" class="container tab-pane fade">
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-2.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-1.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-3.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="m-recent" class="container tab-pane fade">
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-4.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-5.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                                <div class="tn-news">
+                                    <div class="tn-img">
+                                        <img src="{% static 'img/news-350x223-1.jpg' %}" />
+                                    </div>
+                                    <div class="tn-title">
+                                        <a href="">News Content</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab News Start-->
+
+        <!-- Main News Start-->
+        <div class="main-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://e3.365dm.com/21/06/2048x1152/skynews-kharg-iran_5402914.jpg?bypass-service-worker&20210602120253" />
+                                    <div class="mn-title">
+                                        <a href="https://news.sky.com/story/irans-largest-warship-the-kharg-sinks-after-catching-fire-in-gulf-of-oman-12323043">Iran's largest warship the Kharg sinks after catching fire in Gulf of Oman</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://e3.365dm.com/21/06/2048x1152/skynews-peru-covid-coronavirus_5401688.jpg?bypass-service-worker&20210601102743" />
+                                    <div class="mn-title">
+                                        <a href="https://news.sky.com/story/covid-19-perus-death-toll-more-than-doubles-to-over-180-000-following-official-review-12322067">Peru's death toll more than doubles to over 180,000 following official review</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://e3.365dm.com/21/06/2048x1152/skynews-donald-trump-phone_5403175.jpg?bypass-service-worker&20210602162435" />
+                                    <div class="mn-title">
+                                        <a href="https://news.sky.com/story/donald-trump-closes-down-blog-set-up-after-social-media-ban-less-than-a-month-after-its-launch-12323267">Donald Trump closes down blog set up after social media ban</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C7A3/production/_118770115_gettyimages-1137874467.jpg" />
+                                    <div class="mn-title">
+                                        <a href="https://www.bbc.com/news/business-57322982">Zoom sales race ahead despite workplaces reopening</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="{% static 'img/news-350x223-5.jpg' %}" />
+                                    <div class="mn-title">
+                                        <a href="">US delays tariffs in 'tech tax' row</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/14BB6/production/_118681948_gettyimages-1233222317.jpg" />
+                                    <div class="mn-title">
+                                        <a href="https://www.indiatoday.in/coronavirus-outbreak/story/no-fear-only-beer-joe-biden-offers-free-brew-to-get-americans-vaccinated-against-covid-19-1810122-2021-06-02">Joe Biden offers free brew to get Americans vaccinated against Covid-19</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://i.guim.co.uk/img/media/2a00ab1b5fb0d6796984af61c4e272a6a8226ce7/0_228_5184_3110/master/5184.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=f09e0328ea9c9bc023125565b518c711" />
+                                    <div class="mn-title">
+                                        <a href="https://www.theguardian.com/business/2021/jun/02/eu-agrees-to-force-multinationals-to-disclose-tax-piling-pressure-on-uk">EU agrees to force multinationals to disclose tax, piling pressure on UK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://i.guim.co.uk/img/media/879d3917f1f12800cd0d1bc0f6076812bc61234d/0_81_5906_3545/master/5906.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=ff60c0ab30a868ad786a891576549ba9" />
+                                    <div class="mn-title">
+                                        <a href="https://www.theguardian.com/world/2021/jun/02/eu-delays-adding-uk-to-covid-white-list-over-fears-of-delta-variant">EU delays adding UK to Covid ‘white list’ over fears of Delta variant</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mn-img">
+                                    <img src="https://www.reuters.com/resizer/3J-AFbKsqyHzhIPmh7t53FBH8sg=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2WARZGCOTNK2FEKVA2KUSDUFLE.jpg" />
+                                    <div class="mn-title">
+                                        <a href="https://www.reuters.com/world/middle-east/iran-nuclear-deal-parties-meet-wrap-up-latest-round-talks-2021-06-02/">EU official sees Iran nuclear deal at next round of talks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="mn-list">
+                            <h2>Read More</h2>
+                            <ul>
+                                <li><a href="https://www.gazimagusabelediyesi.org/gazimagusa-belediye-baskani-ismail-arter-maras-mga-tesisindeki-pcr-merkezini-ziyaret-etti/">GAZİMAĞUSA BELEDİYE BAŞKANI İSMAİL ARTER MARAŞ MGA TESİSİNDEKİ PCR MERKEZİNİ ZİYARET ETTİ</a></li>
+                                <li><a href="https://www.gazimagusabelediyesi.org/gazimagusa-belediyesi-kent-genelindeki-isyerlerinde-siki-denetimlerine-devam-ediyor/">GAZİMAĞUSA MUNICIPALITY CONTINUES ITS TIGHT INSPECTIONS IN WORKPLACES AROUND THE CITY</a></li>
+                                <li><a href="https://www.gazimagusabelediyesi.org/gazimagusa-belediyesi-sht-ibrahim-hasan-caddesi-ve-ulus-sokagin-asfalt-dokumunu-tamamladi/">GAZİMAĞUSA MUNICIPALITY ŞHT. IBRAHİM HASAN AVENUE AND ULUS STREET COMPLETED THE ASPHALT CASTING</a></li>
+                                <li><a href="https://www.gazimagusabelediyesi.org/ubp-lefkosa-milletvekili-dr-faiz-sucuoglu-belediye-baskani-ismail-arteri-ziyaret-etti/">UBP NICOSIA DEPUTY DR. FAİZ SUCUOĞLU VISITED MAYOR İSMAİL ARTER</a></li>
+                              
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main News End-->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Get in Touch</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"> İlker Karter Cd, Gazimağusa 99450</p></i>
+                                <p><i class="fa fa-envelope"> info@gazimagusabelediyesi.org</p></i>
+                                <p><i class="fa fa-phone"> +90 392 630 05 00</p></i>
+                                <div class="social">
+                                    <a href="https://twitter.com/gmagusa"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/GazimagusaBelediyesi"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/gazimagusabelediyesi/"><i class="fab fa-instagram"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Useful Links</h3>
+                            <ul>
+                                <li><a href="https://saglik.gov.ct.tr/COVID-19">Saglik(Ministry of health)</a></li>
+                                <li><a href="https://www.gazimagusabelediyesi.org
+                                    ">Municipality Official Website</a></li>
+                                <li><a href="https://permissions.gov.ct.tr/login">Student Residence Permit</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Other News</h3>
+                            <ul>
+                                <li><a href="https://www.lgcnews.com ">Lgc News</a></li>
+                                   
+                                <li><a href="https://www.olomoinfo.com/">Olomoinfo</a></li>
+                                <li><a href="www.yenicaggazetesi.com">yenicag gazetesi</a></li>
+                                <li><a href="www.haber7.com">Haber 7</a></li>
+                                <li><a href="https://www.cyprustodayonline.com">Cyprus Today</a></li>
+                                    
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Newsletter</h3>
+                            <div class="newsletter">
+                                <p>
+                                    Sign up for our newsletter and get the latest news first!
+                                </p>
+                                <form>
+                                    <input class="form-control" type="email" placeholder="Your email here">
+                                    <button class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Footer Menu Start -->
+        <div class="footer-menu">
+            <div class="container">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Accessibility help</a>
+                    <a href="">Advertise with us</a>
+                    <a href="">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Menu End -->
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="">FamagustaNews</a>. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-md-6 template-by">
+                        <p>Designed By <a href="#">CollinDevs</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'js/easing.min.js'%}"></script>
+        <script src="{% static 'js/slick.min.js'%}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js'%}"></script>
+        <!--NewsAPI-->
+        <script src="{% static 'js/news.js'%}"></script>
+    </body>
+</html>

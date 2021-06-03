@@ -1,0 +1,23 @@
+.containerMap {
+ 
+   position: relative;
+   width: 1000px;
+    height: 900px;
+    padding-left:  60px;
+    
+  
+     
+    
+}
+#map {
+   
+    height: 70%;
+    border: 5px solid #bb4d00;
+    width: 4500px;
+ 
+
+    
+}
+#data, #allData {
+    display: none;
+}
